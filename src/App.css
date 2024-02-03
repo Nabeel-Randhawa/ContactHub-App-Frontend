@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Girassol', cursive; /* Change font-family for the entire body */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(24, 162, 232, 0.62);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  background-image: url('https://picsum.photos/1600/900');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+.form {
+  flex-grow: 1;
+}
+
+.contacts {
+  flex-grow: 3;
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.edit {
+  cursor: pointer;
+  color: #4CAF50; /* Green color */
+  font-weight: bold;
+}
+
+.delete {
+  cursor: pointer;
+  color: #FF5733; /* Red-Orange color */
+  font-weight: bold;
+}
+
+.header {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Girassol', cursive;
+  color: #333; /* Dark Gray color */
+}
+
+.design {
+  font-size: 2rem;
+  font-family: 'Girassol', cursive;
+  color: #333; /* Dark Gray color */
+}
+
+.contact-header {
+  font-family: 'Girassol', cursive;
+  background-color: #fff; /* White color */
+  padding: 10px;
+  border-radius: 5px;
+  color: #333; /* Dark Gray color */
+}
+
+.nothing-found {
+  color: #FF5733; /* Red-Orange color */
+}
+
+.table {
+  min-width: 500px;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd; /* Light Gray border */
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2; /* Light Gray background */
+}
